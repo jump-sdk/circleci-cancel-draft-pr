@@ -1,0 +1,16 @@
+version: 2.1
+commands:
+  check-skippable-pr:
+    steps:
+      - run: apk add --no-cache bash curl jq
+      - run:
+          shell: /bin/bash
+          name: Check skippable PR !!!!
+          command: |
+            ./scripts/check-skippable-pr.sh
+jobs:
+  check-skippable-pr:
+    docker:
+      - image: alpine:3.7
+    steps:
+      - check-skippable-pr
