@@ -1,0 +1,6 @@
+steps:
+  - run: apk add --no-cache bash curl jq
+  - run:
+      shell: /bin/bash
+      name: Check skippable PR !!!!
+      command: <<include(scripts/check-skippable-pr.sh)>>

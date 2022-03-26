@@ -1,0 +1,10 @@
+version: 2.1
+
+description: >
+  The orb helps you that cancel running CI with your GitHub draft pull request
+  automatically to save your credits.
+
+# This information will be displayed in the orb registry and is not mandatory.
+display:
+  home_url: "https://github.com/whyayen/bye-github-draft"
+  source_url: "https://github.com/whyayen/bye-github-draft"
