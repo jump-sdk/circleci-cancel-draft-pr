@@ -29,20 +29,5 @@ GitHub > Settings > Developer Settings > Personal access tokens
 
 6. Back to CircleCI, And add a envrionment variable whose **Name** is `GITHUB_TOKEN` and **Value** is the token you just copied.
 
-7. Modify CircleCI `config.yml`
-```yaml
-version: 2.1
-orbs:
-  bye-github-draft: whyayen/bye-github-draft@0.0.1
-
-# something else..
-
-workflows:
-  your_workflow:
-    jobs:
-      - bye-github-draft/check-skippable-pr
-      # Make sure that your jobs run after check-skippable-pr by requires
-      - your_job:
-          requires:
-            - bye-github-draft/check-skippable-pr
-```
+7. Use `bye-github-draft` orb to your existing project, please read: 
+[Start Guide](https://circleci.com/developer/orbs/orb/whyayen/bye-github-draft#quick-start)
