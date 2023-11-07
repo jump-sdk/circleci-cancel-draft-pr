@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 required_env_vars=(
-              "GITHUB_TOKEN"
+              "GH_TOKEN"
               "CIRCLE_TOKEN"
             )
 
