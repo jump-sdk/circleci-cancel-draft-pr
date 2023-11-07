@@ -1,4 +1,4 @@
-# bye-github-draft
+# circleci-cancel-draft-pr
 **An orb to check your pull request status and cancel whole CircleCI workflow which is created by commit of GitHub draft PR automatically.**
 
 The orb is a fork of [artsy/skip-wip-ci](https://github.com/artsy/orbs/blob/master/src/skip-wip-ci/skip-wip-ci.yml). The mose part of code is base on skip-wip-ci. It just remain `check-skippable-pr` job only.
